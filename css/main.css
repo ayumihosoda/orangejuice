@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+span {
+	font-weight: 600;
+}
+
+/* -------------------------------------------------
+				Navigation
+--------------------------------------------------*/
+
+.nav {
+	background-color: #FE7E00;  
+	color: #FFFFFF;			
+	height: 100px;  
+}
+
+.nav ul li {
+	display: inline-block;   
+	list-style: none;
+}
+
+
+.nav .top-left {            
+	float: left;
+	font-size: 30px;
+	margin-left: 70px;
+	margin-top: 25px;
+}
+
+.nav .top-left li:first-child {
+	vertical-align: top;
+}
+
+
+.nav .top-right {
+	float: right;
+	margin-top: 30px;
+	margin-right: 40px;
+}
+
+.nav .top-right li {
+	font-size: 15px;
+	letter-spacing: 1px;
+	padding: 1px;
+	margin: 0 15px;
+	text-align: center;
+}
+
+/* -------------------------------------------------
+					Mid-Section
+--------------------------------------------------*/
+
+/* Left side */
+
+.left-section {
+	width: 40%;
+	float: left;
+}
+
+.left-section img {
+	margin-left: 50px;
+	margin-top: 150px;
+	width: 95%;
+	position: relative;
+	bottom: 50px;
+}
+
+.right-section {
+	width: 60%;
+	height: 30%;
+	float: right;
+}
+
+
+.right-section .top-right {
+	position: relative;
+	min-height: 40%;
+	margin-top: 2px;
+	left: 500px;
+}
+
+.right-section input {
+	min-height: 40px;
+	min-width: 200px;
+	background-color: #eee;
+	border: none;
+	text-indent: 20px;
+	letter-spacing: 1px;
+}
+
+.right-section .fa-search {
+	position: relative;
+	top: 1px;
+	left: -30px;
+	color: #a6a6a6;
+}
+
+
+.right-section .content {
+	position: absolute;
+	top: 250px;
+	right: 50px;
+}
+
+.content p {
+	color: #F1A260;
+	font-size: 35px;
+	line-height: 50px;
+}
+
+.content span:nth-child(n+2), .content span:last-child {
+	color: #78CDCA;
+}
+
+.button button {
+	color: white;
+	min-width: 230px;
+	min-height: 50px;
+	text-align: center;
+	border-radius: 2px;
+	border: none;
+	margin-top: 50px;
+	margin-right: 50px;
+}
+
+.button button:first-child {
+	background-color: #FE7E00;
+}
+
+.button button:last-child {
+	background-color: #78CDCA;
+}
+
+
+/* -------------------------------------------------
+					Footer
+--------------------------------------------------*/
+
+.footer {
+	    position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 95px;
+        background-color: #78CDCA;
+}
