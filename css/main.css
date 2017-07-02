@@ -8,9 +8,7 @@ span {
 	font-weight: 600;
 }
 
-/* -------------------------------------------------
-				Navigation
---------------------------------------------------*/
+/*Navigation*/
 
 .nav {
 	background-color: #FE7E00;  
@@ -23,7 +21,6 @@ span {
 	list-style: none;
 }
 
-
 .nav .top-left {            
 	float: left;
 	font-size: 30px;
@@ -34,7 +31,6 @@ span {
 .nav .top-left li:first-child {
 	vertical-align: top;
 }
-
 
 .nav .top-right {
 	float: right;
@@ -50,11 +46,8 @@ span {
 	text-align: center;
 }
 
-/* -------------------------------------------------
-					Mid-Section
---------------------------------------------------*/
-
-/* Left side */
+/*Mid Section*/
+	/* Left side */
 
 .left-section {
 	width: 40%;
@@ -75,12 +68,10 @@ span {
 	float: right;
 }
 
-
-.right-section .top-right {
-	position: relative;
-	min-height: 40%;
-	margin-top: 2px;
-	left: 500px;
+.top {
+	text-align: right;
+	margin-right: 50px;
+	margin-top: 10px;
 }
 
 .right-section input {
@@ -136,14 +127,103 @@ span {
 }
 
 
-/* -------------------------------------------------
-					Footer
---------------------------------------------------*/
+/*Footer*/
 
 .footer {
-	    position: absolute;
+		position: absolute;
         bottom: 0;
         width: 100%;
         height: 95px;
         background-color: #78CDCA;
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 1050px) {
+	.content p {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.button button {
+		min-width: 180px;
+		margin-right: 20px;
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 882px) {
+	.nav .top-right {
+		margin-top: 40px;
+		margin-right: 60px;
+	}
+
+	.nav .top-right li {
+		font-size: 13px;
+		letter-spacing: 0;
+		margin: 0 10px;
+	} 
+
+	.right-section .content {
+		top: 200px;
+	}
+
+	.left-section img {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 765px) {
+	.nav .top-left {
+		margin-top: 40px;
+		font-size: 20px;
+	}
+	
+	.nav .top-left img {
+		height: 75%;
+		width: 75%;
+	}
+
+	.nav .top-right li {
+		font-size: 10px;
+		margin: 0 5px;
+	}
+
+	.left-section img {
+		width: 75%;
+		height: 75%;
+	}
+
+	.content p {
+		font-size: 25px;
+		line-height: 30px;
+	}
+	
+	.button button {
+	width: 150px;
+	height: 45px;
+	}
+
+}
+
+@media (max-width: 590px) {
+	.nav .top-right li {
+		font-size: 8px;
+		margin-right: 2px;
+	}
+
+	.left-section img {
+		display: none;
+	}
+
+	.content p {
+		font-size: 25px;
+		line-height: 30px;
+	}
+	
+	.button button {
+	width: 150px;
+	height: 45px;
+	}
 }
